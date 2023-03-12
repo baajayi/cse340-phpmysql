@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "LocalCon",
+            "database": "phpmotors",
+            "username": "bamClient",
+            "password": "zFbS*gmnkq@bgvV2"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "iClient",
+            "database": "phpmotors",
+            "username": "iClient",
+            "password": "UDp@]M5*yXV-.WGY"
+        }
+    ]
+}
