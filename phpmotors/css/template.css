@@ -311,6 +311,25 @@ th {
   .vehicle h2, .vehicle h3, .vehicle p {
     margin: 0 0 20px;
   }
+#thumbnail {
+    display: flex;
+    list-style: none;
+}
+#thumbnail li {
+    border: 1px solid black;
+    margin: 0 2em 0 2em;
+    border-radius: 0.5em;
+    box-shadow: #3a3a3a;
+    box-sizing: border-box;
+}
+#thumbnail li img {
+    transition: transform 0.3s ease-out;
+    padding: 0.5em;
+    
+}
+#thumbnail li img:hover {
+    transform: scale(1.2);
+  }
   
   
 @media screen and (min-width: 760px) {

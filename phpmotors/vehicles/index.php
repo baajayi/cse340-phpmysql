@@ -12,6 +12,8 @@ require_once '../model/main-model.php';
 require_once '../model/vehicles.php';
 //Get the functions library
 require_once '../library/functions.php';
+//Get the uploads model 
+require_once '../model/uploads-model.php';
 
 
 // Get the array of classifications
@@ -211,7 +213,7 @@ if(empty($invMake) || empty($invModel) || empty($invDescription) || empty($invIm
     $message = "<p class='notice'>Sorry, no $classificationName vehicles could be found.</p>";
   } else {
     $vehicleDisplay = buildVehiclesDisplay($vehicles);
-    // echo $vehicleDisplay;
+    //  var_dump($vehicles);
     // exit;
     include '../view/classification.php';
   }
@@ -223,6 +225,11 @@ if(empty($invMake) || empty($invModel) || empty($invDescription) || empty($invIm
   $invInfo = getInvItemInfo($invId);
   // var_dump($invInfo);
   $vehicleInfo = buildVehiclePage($invInfo);
+  $vehicleThumbnail = getThumbnail($invId);
+  // var_dump($vehicleThumbnail);
+  $thumbnailBuild = buildThumbnail($vehicleThumbnail);
+ 
+  
 
   if(count($invInfo)<1){
     $message = 'Sorry, no vehicle information could be found.';

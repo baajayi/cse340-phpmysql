@@ -23,6 +23,7 @@
  ?>
  <?php if(isset($vehicleInfo)){
  echo $vehicleInfo;
+ echo $thumbnailBuild;
 } ?>
 </main>
 <hr>

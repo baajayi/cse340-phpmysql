@@ -24,7 +24,7 @@
             <p>Superman doors</p>
             <p>Fuzzy dice</p>
         </aside>
-        <img class="main-img" src="/phpmotors/images/delorean.jpg" alt="DMC Delorean">
+        <img class="main-img" src="/phpmotors/images/vehicles/delorean.jpg" alt="DMC Delorean">
         <!-- <button>Own Today</button> -->
         <img class="button" src="/phpmotors/images/site/own_today.png" alt="own today button">
         <div class="lower-grid">
