@@ -319,7 +319,6 @@ th {
     border: 1px solid black;
     margin: 0 2em 0 2em;
     border-radius: 0.5em;
-    box-shadow: #3a3a3a;
     box-sizing: border-box;
 }
 #thumbnail li img {

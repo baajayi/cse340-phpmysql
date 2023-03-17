@@ -231,7 +231,7 @@ function buildThumbnail($thumbnailMatch) {
     $dv = '<ul id="thumbnail">';
     foreach ($thumbnailMatch as $thumb){
     $dv .= '<li>';
-    $dv .= "<img src='$thumb[imgPath]' alt='$thumb[imgName]' ";
+    $dv .= "<img src='$thumb[imgPath]' alt='$thumb[imgName]'>";
     $dv .= '</li>';
     }
     $dv .= '</ul>';
