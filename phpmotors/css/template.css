@@ -311,15 +311,35 @@ th {
   .vehicle h2, .vehicle h3, .vehicle p {
     margin: 0 0 20px;
   }
-#thumbnail {
+
+  .thumbnail-wrapper {
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
 }
+
+ #thumbnail {
+    /* margin-left: 0; */
+     /* padding:;  */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+} 
+
+ /* #thumbnail {
+    display: flex;
+    flex-flow: row;
+    
+}  */
 #thumbnail li {
     border: 1px solid black;
-    margin: 0 2em 0 2em;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    /* margin: 0 0.1em 0 0.1em; */
     border-radius: 0.5em;
-    box-sizing: border-box;
+   
 }
 #thumbnail li img {
     transition: transform 0.3s ease-out;
@@ -329,6 +349,9 @@ th {
 #thumbnail li img:hover {
     transform: scale(1.2);
   }
+.thumbnail-heading{
+    text-align: center;
+}
   
   
 @media screen and (min-width: 760px) {
@@ -462,4 +485,17 @@ th {
       .vehicle h3 {
         grid-area: h3;
       }
+      .thumbnail-heading {
+        display: none;
+      }
+        
+      #detail-page {
+        display: flex;
+        flex-flow: row-reverse;
+      }
+      #thumbnail {
+        display: flex;
+        flex-flow: column;
+      }
+
     }

@@ -21,10 +21,11 @@
 <?php if(isset($message)){
  echo $message; }
  ?>
+ <div id="detail-page">
  <?php if(isset($vehicleInfo)){
  echo $vehicleInfo;
  echo $thumbnailBuild;
-} ?>
+} ?></div>
 </main>
 <hr>
 <?php require $_SERVER['DOCUMENT_ROOT'].'/phpmotors/snippets/footer.php'; ?>   

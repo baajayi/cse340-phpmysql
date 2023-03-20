@@ -228,14 +228,18 @@ function resizeImage($old_image_path, $new_image_path, $max_width, $max_height) 
    } // ends resizeImage function
 
 function buildThumbnail($thumbnailMatch) {
-    $dv = '<ul id="thumbnail">';
+    $dv = '<div class="thumbnail-wrapper">';
+    $dv .= '<h3 class="thumbnail-heading">More Images</h3>';
+    $dv .= '<ul id="thumbnail">';
     foreach ($thumbnailMatch as $thumb){
-    $dv .= '<li>';
-    $dv .= "<img src='$thumb[imgPath]' alt='$thumb[imgName]'>";
-    $dv .= '</li>';
+        $dv .= '<li>';
+        $dv .= "<img src='$thumb[imgPath]' alt='$thumb[imgName]'>";
+        $dv .= '</li>';
     }
     $dv .= '</ul>';
+    $dv .= '</div>';
     return $dv;
+
     
 
 }
